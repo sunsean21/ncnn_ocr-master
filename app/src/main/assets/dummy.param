@@ -1,0 +1,4 @@
+7767517
+2 2
+Input            input                    0 1 in
+LSTMNEON      LSTM_0                   1 1 in out 0=256 1=262144 2=0

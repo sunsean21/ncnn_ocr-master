@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Image" />
+
+        <Button
+            android:id="@+id/buttonDetect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test - selected" />
+
+        <Button
+            android:id="@+id/buttonDetectTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test - lstm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textthreads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#threads" />
+
+        <EditText
+            android:id="@+id/threadsnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="#thread"
+            android:inputType="numberDecimal"
+            android:text="1" />
+        
+        <TextView
+            android:id="@+id/textiteration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#iteration" />
+
+        <EditText
+            android:id="@+id/iterationnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="#iter."
+            android:inputType="numberDecimal"
+            android:text="1" />
+
+        <CheckBox android:id="@+id/checkbox_gpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="use gpu"
+            android:checked="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/infoResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
